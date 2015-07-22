@@ -1,0 +1,11 @@
+{
+  "name": "chatreal",
+  "version": "1.0.0",
+  "description": "A realtime chat with video and gifs.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fabio Rojas <fabiorojas7@gmail.com>",
+  "license": "MIT"
+}
