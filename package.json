@@ -1,12 +1,29 @@
 {
-
   "name": "chatreal",
   "version": "1.0.0",
   "description": "A realtime chat with video and gifs.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "npm run build-js",
+    "build-js": "browserify cliente/app.js -o public/js/app.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hackchan/chatlive.git"
   },
   "author": "Fabio Rojas <fabiorojas7@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hackchan/chatlive/issues"
+  },
+  "homepage": "https://github.com/hackchan/chatlive",
+  "dependencies": {
+    "course": "0.0.1",
+    "st": "latest",
+    "webrtc2images": "^1.4.4"
+  },
+  "devDependencies": {
+    "browserify": "^11.0.0"
+  }
 }
